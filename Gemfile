@@ -48,3 +48,6 @@ end
 gem 'less-rails', '~> 2.8'
 gem "therubyracer"
 gem "twitter-bootstrap-rails"
+gem "font-awesome-rails"
+gem 'simple_form'
+gem 'devise'
