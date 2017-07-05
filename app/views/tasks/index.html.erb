@@ -1,15 +1,19 @@
 <div class="row">
-<div class="col-md-4"><h1 class="text-center">To Do</h1>
+<div class="col-md-4"><h1 class="text-center"><i class="fa fa-list" aria-hidden="true"></i>
+To Do</h1>
 <%= render @to_do %>
 </div>
-<div class="col-md-4"><h1 class="text-center">Doing</h1>
+<div class="col-md-4"><h1 class="text-center"><i class="fa fa-spinner" aria-hidden="true"></i>
+Doing</h1>
 <%= render @doing %>
 </div>
-<div class="col-md-4"><h1 class="text-center">Done</h1>
+<div class="col-md-4"><h1 class="text-center"><i class="fa fa-check-square-o" aria-hidden="true"></i>
+Done</h1>
 <%= render @done %>
 </div>
 </div>
 
 <br>
 
-<%= link_to 'New Task', new_task_path %>
+<%= link_to "<i class='fa fa-sticky-note' aria-hidden='true'></i>
+New Task".html_safe, new_task_path, class: "btn btn-lg btn-primary" %>
